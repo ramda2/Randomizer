@@ -14,13 +14,19 @@ import SwiftyJSON
 
 class ProfileViewController: UIViewController {
     @IBOutlet weak var profileImageView: UIImageView!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var ageTextField: UITextField!
-    @IBOutlet weak var phoneTextField: UITextField!
-    @IBOutlet weak var cityTextField: UITextField!
-    @IBOutlet weak var regionTextField: UITextField!
+
+    @IBOutlet weak var nameLabel: UILabel!
     var genderSelection: String?
     
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var regionLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    
+    @IBAction func rightSwiped(sender: UISwipeGestureRecognizer) {
+        self.navigationController!.popViewControllerAnimated(true)
+    }
+
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     }
@@ -121,11 +127,11 @@ class ProfileViewController: UIViewController {
             if let data = NSData(contentsOfURL:url!) {
                 //set the profile image to downloaded data from URL
                 self.profileImageView?.image = UIImage(data: data)
-                self.nameTextField.text = name
-                self.ageTextField.text = "\(age)"
-                self.phoneTextField.text = cellPhone
-                self.cityTextField.text = city
-                self.regionTextField.text = region
+                self.nameLabel.text = name
+                self.ageLabel.text = "\(age)"
+                self.phoneLabel.text = cellPhone
+                self.cityLabel.text = city
+                self.regionLabel.text = region
             }
         }
     }
