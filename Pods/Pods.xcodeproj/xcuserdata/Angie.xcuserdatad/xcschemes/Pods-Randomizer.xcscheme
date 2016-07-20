@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0730"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FDC90AE81D31592900F3E1DA"
-               BuildableName = "Randomizer.app"
-               BlueprintName = "Randomizer"
-               ReferencedContainer = "container:Randomizer.xcodeproj">
+               BlueprintIdentifier = "2345E8F2557884DB8EFF52E85A1F972B"
+               BuildableName = "Pods_Randomizer.framework"
+               BlueprintName = "Pods-Randomizer"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FDC90AE81D31592900F3E1DA"
-            BuildableName = "Randomizer.app"
-            BlueprintName = "Randomizer"
-            ReferencedContainer = "container:Randomizer.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FDC90AE81D31592900F3E1DA"
-            BuildableName = "Randomizer.app"
-            BlueprintName = "Randomizer"
-            ReferencedContainer = "container:Randomizer.xcodeproj">
+            BlueprintIdentifier = "2345E8F2557884DB8EFF52E85A1F972B"
+            BuildableName = "Pods_Randomizer.framework"
+            BlueprintName = "Pods-Randomizer"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FDC90AE81D31592900F3E1DA"
-            BuildableName = "Randomizer.app"
-            BlueprintName = "Randomizer"
-            ReferencedContainer = "container:Randomizer.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

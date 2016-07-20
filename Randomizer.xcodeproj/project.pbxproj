@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD0CA9E58D867C1E3939E7CE /* Pods_Randomizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997FCDB86960396FB3C6250 /* Pods_Randomizer.framework */; };
 		FDC90AED1D31592900F3E1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC90AEC1D31592900F3E1DA /* AppDelegate.swift */; };
 		FDC90AEF1D31592900F3E1DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC90AEE1D31592900F3E1DA /* ViewController.swift */; };
 		FDC90AF21D31592900F3E1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC90AF01D31592900F3E1DA /* Main.storyboard */; };
 		FDC90AF41D31592900F3E1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC90AF31D31592900F3E1DA /* Assets.xcassets */; };
 		FDC90AF71D31592900F3E1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC90AF51D31592900F3E1DA /* LaunchScreen.storyboard */; };
+		FDC90B001D315A1600F3E1DA /* ProfileSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC90AFF1D315A1600F3E1DA /* ProfileSelectorViewController.swift */; };
+		FDC90B021D315A6D00F3E1DA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC90B011D315A6D00F3E1DA /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3997FCDB86960396FB3C6250 /* Pods_Randomizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Randomizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3FE41B1DA36ADB7A7A092B /* Pods-Randomizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Randomizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Randomizer/Pods-Randomizer.release.xcconfig"; sourceTree = "<group>"; };
+		89C87ECEB02DCDEF67668002 /* Pods-Randomizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Randomizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Randomizer/Pods-Randomizer.debug.xcconfig"; sourceTree = "<group>"; };
 		FDC90AE91D31592900F3E1DA /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC90AEC1D31592900F3E1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDC90AEE1D31592900F3E1DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		FDC90AF31D31592900F3E1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDC90AF61D31592900F3E1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDC90AF81D31592900F3E1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC90AFF1D315A1600F3E1DA /* ProfileSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSelectorViewController.swift; sourceTree = "<group>"; };
+		FDC90B011D315A6D00F3E1DA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0CA9E58D867C1E3939E7CE /* Pods_Randomizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C23B81B536B4B79BAB04439 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89C87ECEB02DCDEF67668002 /* Pods-Randomizer.debug.xcconfig */,
+				3D3FE41B1DA36ADB7A7A092B /* Pods-Randomizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		699FA1511BF3FAEFC6F3EBA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3997FCDB86960396FB3C6250 /* Pods_Randomizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDC90AE01D31592800F3E1DA = {
 			isa = PBXGroup;
 			children = (
 				FDC90AEB1D31592900F3E1DA /* Randomizer */,
 				FDC90AEA1D31592900F3E1DA /* Products */,
+				1C23B81B536B4B79BAB04439 /* Pods */,
+				699FA1511BF3FAEFC6F3EBA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +82,7 @@
 		FDC90AEB1D31592900F3E1DA /* Randomizer */ = {
 			isa = PBXGroup;
 			children = (
+				FDC90AFE1D3159F900F3E1DA /* View Controllers */,
 				FDC90AEC1D31592900F3E1DA /* AppDelegate.swift */,
 				FDC90AEE1D31592900F3E1DA /* ViewController.swift */,
 				FDC90AF01D31592900F3E1DA /* Main.storyboard */,
@@ -64,6 +93,15 @@
 			path = Randomizer;
 			sourceTree = "<group>";
 		};
+		FDC90AFE1D3159F900F3E1DA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDC90AFF1D315A1600F3E1DA /* ProfileSelectorViewController.swift */,
+				FDC90B011D315A6D00F3E1DA /* ProfileViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDC90AFB1D31592900F3E1DA /* Build configuration list for PBXNativeTarget "Randomizer" */;
 			buildPhases = (
+				ACA8837648BFEC8BEC56D32C /* [CP] Check Pods Manifest.lock */,
 				FDC90AE51D31592900F3E1DA /* Sources */,
 				FDC90AE61D31592900F3E1DA /* Frameworks */,
 				FDC90AE71D31592900F3E1DA /* Resources */,
+				79121FC8866013A1B2CCF16F /* [CP] Embed Pods Frameworks */,
+				58E4EF291FE9B1D292284893 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +172,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58E4EF291FE9B1D292284893 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Randomizer/Pods-Randomizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79121FC8866013A1B2CCF16F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Randomizer/Pods-Randomizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACA8837648BFEC8BEC56D32C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FDC90AE51D31592900F3E1DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +227,8 @@
 			files = (
 				FDC90AEF1D31592900F3E1DA /* ViewController.swift in Sources */,
 				FDC90AED1D31592900F3E1DA /* AppDelegate.swift in Sources */,
+				FDC90B021D315A6D00F3E1DA /* ProfileViewController.swift in Sources */,
+				FDC90B001D315A1600F3E1DA /* ProfileSelectorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +339,10 @@
 		};
 		FDC90AFC1D31592900F3E1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C87ECEB02DCDEF67668002 /* Pods-Randomizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Randomizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.Randomizer;
@@ -259,8 +352,10 @@
 		};
 		FDC90AFD1D31592900F3E1DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3FE41B1DA36ADB7A7A092B /* Pods-Randomizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Randomizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.Randomizer;
@@ -287,6 +382,7 @@
 				FDC90AFD1D31592900F3E1DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
